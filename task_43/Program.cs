@@ -3,13 +3,19 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 Console.WriteLine("Введите значение b1 :");
-int b1Value = Convert.ToInt32(Console.ReadLine());
+double b1Value = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите значение k1 :");
-int k1Value = Convert.ToInt32(Console.ReadLine());
+double k1Value = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите значение b2 :");
-int b2Value = Convert.ToInt32(Console.ReadLine());
+double b2Value = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите значение k2 :");
-int k2Value = Convert.ToInt32(Console.ReadLine());
+double k2Value = Convert.ToDouble(Console.ReadLine());
+
+double xVar = (b2Value - b1Value) / (k1Value - k2Value);
+
+double yVar = k1Value * xVar + b1Value;
+
+Console.WriteLine($" x = {xVar}, y = {yVar}");
